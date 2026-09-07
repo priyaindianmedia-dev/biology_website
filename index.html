@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slave To Biology — Learn. Understand. Evolve.</title>
+<meta name="description" content="Science-backed fitness, nutrition and joint/pain-recovery masterclasses with Sahil Pandey — Certified Nutritionist & Personal Trainer, 10+ years experience.">
+<link rel="icon" href="assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --royal:#082462;
+    --navy:#0F172A;
+    --white:#FFFFFF;
+    --alt:#F7F9FC;
+    --text:#111827;
+    --electric:#3B82F6;
+    --success:#10B981;
+    --whatsapp:#25D366;
+    --royal-10: rgba(20,93,255,.08);
+    --royal-20: rgba(20,93,255,.16);
+    --shadow-soft: 0 20px 50px -20px rgba(15,23,42,.25);
+    --ease: cubic-bezier(.22,.61,.36,1);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter', sans-serif;
+    color:var(--text);
+    background:var(--white);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  
+  h1,h2,h3,h4{
+    font-family:'Poppins', sans-serif;
+    font-weight:800;
+    letter-spacing:-0.01em;
+    color:var(--navy);
+  }
+  img{max-width:100%; display:block;}
+  a{text-decoration:none; color:inherit;}
+  ul{list-style:none;}
+  .wrap{max-width:1240px; margin:0 auto; padding:0 32px;}
+  section{position:relative;}
+  .section-pad{padding:120px 0;}
+  @media(max-width:768px){ .section-pad{padding:80px 0;} }
+
+  ::selection{background:var(--royal); color:#fff;}
+
+  /* ---------- Reveal on scroll ---------- */
+  .reveal{opacity:0; transform:translateY(28px); transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal.in{opacity:1; transform:translateY(0);}
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1; transform:none; transition:none;}
+    *{animation:none !important; transition-duration:.01ms !important;}
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:16px 30px; border-radius:100px; font-weight:600; font-size:15px;
+    cursor:pointer; border:none; position:relative; overflow:hidden;
+    transition:transform .35s var(--ease), box-shadow .35s var(--ease);
+    white-space:nowrap;
+  }
+  .btn-primary{ background:var(--royal); color:#fff; box-shadow:0 14px 30px -10px rgba(20,93,255,.55);}
+  .btn-primary:hover{ transform:translateY(-3px); box-shadow:0 20px 38px -10px rgba(20,93,255,.65);}
+  .btn-ghost{ background:transparent; color:var(--navy); border:1.5px solid rgba(15,23,42,.15); }
+  .btn-ghost:hover{ border-color:var(--royal); color:var(--royal); transform:translateY(-3px);}
+  .btn-light{ background:#fff; color:var(--royal); }
+  .btn-light:hover{ transform:translateY(-3px); box-shadow:0 16px 30px -10px rgba(0,0,0,.3);}
+  .btn-sm{ padding:11px 20px; font-size:13.5px; }
+  .btn::after{
+    content:''; position:absolute; top:50%; left:50%; width:0; height:0; border-radius:100%;
+    background:rgba(255,255,255,.35); transform:translate(-50%,-50%);
+    transition:width .5s ease, height .5s ease;
+  }
+  .btn:active::after{ width:220px; height:220px; }
+
+  .eyebrow{
+    font-family:'Poppins',sans-serif; font-weight:700; font-size:13px; color:var(--royal);
+    display:flex; align-items:center; gap:10px; margin-bottom:14px;
+  }
+  .eyebrow::before{ content:''; width:26px; height:2px; background:var(--royal); border-radius:2px; }
+
+  .section-head{ max-width:640px; margin-bottom:56px; }
+  .section-head h2{ font-size:clamp(28px,4vw,42px); line-height:1.15; }
+  .section-head p{ margin-top:16px; color:#5b6472; font-size:16.5px; max-width:520px; }
+  .section-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
+  .section-head.center .eyebrow{ justify-content:center; }
+  .section-head.center p{ margin-left:auto; margin-right:auto; }
+
+  /* ---------- Nav ---------- */
+  header{
+    position:fixed; top:0; left:0; right:0; z-index:1000;
+    padding:18px 0; transition:padding .4s var(--ease), background .4s var(--ease), box-shadow .4s var(--ease);
+  }
+  header .navbar{
+    display:flex; align-items:center; justify-content:space-between;
+    max-width:1240px; margin:0 auto; padding:10px 20px;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+    border:1px solid rgba(255,255,255,.5);
+    border-radius:100px;
+    box-shadow:0 8px 30px -12px rgba(15,23,42,.12);
+    transition:all .4s var(--ease);
+  }
+  header.scrolled{ padding:10px 0; }
+  header.scrolled .navbar{ box-shadow:0 12px 34px -10px rgba(15,23,42,.2); background:rgba(255,255,255,.92); }
+  .brand{ display:flex; align-items:center; gap:10px; font-family:'Poppins',sans-serif; font-weight:800; font-size:16px; color:var(--navy); }
+  .brand img{ height:40px; width:40px; border-radius:9px; background:#fff; object-fit:contain; }
+  .brand span{ font-size:15px; letter-spacing:.01em; }
+  .brand small{ display:block; font-family:'Inter',sans-serif; font-weight:500; font-size:9.5px; letter-spacing:.14em; color:var(--navy); }
+
+  /* ---------- FAQ dropdown (nav) ---------- */
+  .faq-dropdown-wrap{ position:relative; }
+  .faq-dropdown{
+    position:absolute; top:calc(100% + 16px); right:0; width:380px; max-height:70vh; overflow-y:auto;
+    background:#fff; border-radius:20px; padding:22px 24px; box-shadow:0 30px 60px -20px rgba(15,23,42,.35);
+    border:1px solid rgba(15,23,42,.06);
+    opacity:0; visibility:hidden; transform:translateY(-10px); transition:opacity .3s var(--ease), transform .3s var(--ease), visibility .3s;
+    z-index:1500;
+  }
+  .faq-dropdown.open{ opacity:1; visibility:visible; transform:translateY(0); }
+  .faq-dropdown-head{ font-family:'Poppins'; font-weight:700; font-size:15px; color:var(--navy); margin-bottom:6px; }
+  .faq-dropdown .faq-q{ padding:16px 2px; }
+  .faq-dropdown .faq-q h4{ font-size:14.5px; }
+  .faq-dropdown .faq-a p{ font-size:13.5px; padding:0 2px 16px; }
+  @media(max-width:900px){
+    .faq-dropdown{ position:fixed; top:auto; bottom:24px; left:16px; right:16px; width:auto; max-height:75vh; }
+  }
+
+  .nav-links{ display:flex; align-items:center; gap:28px; }
+  .nav-links a{
+    font-size:14.5px; font-weight:500; color:#3a4150; position:relative; padding:4px 0;
+    transition:color .25s ease;
+  }
+  .nav-links a::after{
+    content:''; position:absolute; left:0; bottom:-2px; width:0; height:2px; background:var(--royal);
+    transition:width .3s var(--ease);
+  }
+  .nav-links a:hover{ color:var(--navy); }
+  .nav-links a:hover::after{ width:100%; }
+  .nav-cta{ display:flex; align-items:center; gap:12px; }
+  .nav-cta .btn{ padding:12px 22px; font-size:13.5px; }
+
+  .wa-icon-btn{
+    display:flex; align-items:center; justify-content:center; width:42px; height:42px; border-radius:50%;
+    background:var(--whatsapp); flex:none; transition:transform .3s var(--ease), box-shadow .3s ease;
+    box-shadow:0 10px 22px -8px rgba(37,211,102,.65);
+  }
+  .wa-icon-btn:hover{ transform:translateY(-3px) scale(1.05); }
+  .wa-icon-btn svg{ width:21px; height:21px; fill:#fff; }
+
+  .hamburger{ display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px; }
+  .hamburger span{ width:22px; height:2px; background:var(--navy); border-radius:2px; transition:all .3s var(--ease); }
+
+  .mobile-menu{
+    position:fixed; inset:0; background:var(--navy); z-index:1100;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:26px;
+    transform:translateY(-100%); transition:transform .5s var(--ease); opacity:0;
+  }
+  .mobile-menu.open{ transform:translateY(0); opacity:1; }
+  .mobile-menu a{ color:#fff; font-family:'Poppins',sans-serif; font-size:22px; font-weight:600; }
+  .mobile-close{ position:absolute; top:26px; right:28px; background:none; border:none; color:#fff; font-size:28px; cursor:pointer; }
+
+  @media(max-width:900px){
+    .nav-links{ display:none; }
+    .nav-cta .btn-ghost{ display:none; }
+    .hamburger{ display:flex; }
+  }
+
+  /* ---------- Floating social ---------- */
+  .float-social{
+    position:fixed; right:24px; top:50%; transform:translateY(-50%); z-index:900;
+    display:flex; flex-direction:column; gap:12px;
+  }
+  .float-social a{
+    display:flex; align-items:center; gap:10px;
+    background:rgba(15,23,42,.55); backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.15);
+    color:#fff; height:48px; border-radius:100px; padding:0 13px;
+    width:48px; overflow:hidden; white-space:nowrap;
+    transition:width .4s var(--ease), background .3s ease, box-shadow .3s ease;
+  }
+  .float-social a svg{ flex:none; width:20px; height:20px; }
+  .float-social a span{ font-size:13.5px; font-weight:600; opacity:0; transition:opacity .25s ease .1s; }
+  .float-social a:hover{ width:190px; background:var(--royal); box-shadow:0 10px 26px -8px rgba(20,93,255,.7); }
+  .float-social a:hover span{ opacity:1; }
+  @media(max-width:768px){ .float-social{ right:14px; } .float-social a{ height:42px; width:42px; } .float-social a:hover{ width:42px; } .float-social a span{ display:none; } }
+
+ /* ---------- Hero ---------- */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 170px 0 70px;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+.hero-title{
+    font-size: 110px;
+    font-weight: 800;
+    line-height: 0.9; /* Reduce the gap */
+    letter-spacing: -2px;
+    margin: 0;
+}
+/* HERO IMAGE */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  background-image: url("home.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* DARK OVERLAY */
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 7, 18, 0.92) 0%,
+      rgba(3, 7, 18, 0.72) 30%,
+      rgba(3, 7, 18, 0.30) 55%,
+      rgba(3, 7, 18, 0.08) 80%,
+      rgba(3, 7, 18, 0.15) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(3, 7, 18, 0.20) 0%,
+      rgba(3, 7, 18, 0.05) 50%,
+      rgba(3, 7, 18, 0.70) 100%
+    );
+}
+
+/* GRID */
+.hero-grid-lines {
+  position: absolute;
+  inset: 0;
+  opacity: .18;
+  z-index: 1;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, .05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, .05) 1px,
+      transparent 1px
+    );
+
+  background-size: 52px 52px;
+
+  mask-image: radial-gradient(
+    ellipse at center,
+    black 20%,
+    transparent 75%
+  );
+}
+
+/* CONTENT */
+.hero .wrap {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+/* TOP ROW */
+.hero-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+/* EYEBROW */
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 13px;
+
+  color: #9db6ff;
+  background: rgba(20, 93, 255, .16);
+  border: 1px solid rgba(59, 130, 246, .35);
+
+  padding: 9px 18px 9px 14px;
+  border-radius: 100px;
+}
+
+.hero-eyebrow .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+
+  background: var(--success);
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, .25);
+
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .4;
+  }
+}
+
+/* HERO CHIP */
+.hero-chip {
+  position: relative;
+  min-width: 230px;
+
+  background: rgba(8, 13, 26, .55);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 18px;
+
+  padding: 16px 20px;
+  overflow: hidden;
+  height: 76px;
+}
+
+.hero-chip-slide {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 16px 20px;
+
+  opacity: 0;
+  transform: translateY(8px);
+
+  transition:
+    opacity .6s var(--ease),
+    transform .6s var(--ease);
+
+  pointer-events: none;
+}
+
+.hero-chip-slide.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.hero-chip-icon {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 10px;
+  background: var(--royal);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+
+  transition:
+    transform .35s var(--ease),
+    background .35s ease;
+}
+
+.hero-chip-slide:hover .hero-chip-icon {
+  background: #fff;
+  transform: rotate(-8deg) scale(1.08);
+}
+
+.hero-chip-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: #fff;
+
+  transition: stroke .3s ease;
+}
+
+.hero-chip-slide:hover .hero-chip-icon svg {
+  stroke: var(--royal);
+}
+
+.hero-chip-slide b {
+  display: block;
+  font-family: 'Poppins';
+  font-size: 14.5px;
+  color: #fff;
+}
+
+.hero-chip-slide span {
+  font-size: 11.5px;
+  color: #aeb8ca;
+}
+
+/* BOTTOM ROW */
+.hero-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* HEADING */
+.hero-heading h1 {
+  color: #fff;
+  font-size: clamp(38px, 6.2vw, 68px);
+  line-height: 1.04;
+  text-transform: uppercase;
+  max-width: 640px;
+}
+
+.hero-heading h1 em {
+  font-style: normal;
+  color: var(--electric);
+  display: block;
+}
+
+/* BUTTONS */
+.hero-heading .hero-btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+/* RIGHT TEXT */
+.hero-side {
+  max-width: 250px;
+  text-align: right;
+}
+
+.hero-side p {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 12.5px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #c9d2e3;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+/* STATS */
+.hero-stats {
+  display: flex;
+  gap: 34px;
+  margin-top: 46px;
+  flex-wrap: wrap;
+}
+
+.hero-stats div b {
+  display: block;
+  font-family: 'Poppins';
+  font-size: 26px;
+  color: #fff;
+}
+
+.hero-stats div span {
+  font-size: 13px;
+  color: #c9d2e3;
+}
+
+/* MOBILE */
+@media (max-width: 980px) {
+  .hero {
+    padding: 130px 0 60px;
+  }
+
+  .hero-top-row {
+    margin-bottom: 70px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-side {
+    text-align: left;
+  }
+
+  .hero-bg {
+    background-position: 65% center;
+  }
+
+
+  .hero-bg::after {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(3, 7, 18, .90) 0%,
+        rgba(3, 7, 18, .55) 55%,
+        rgba(3, 7, 18, .20) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(3, 7, 18, .20),
+        rgba(3, 7, 18, .70)
+      );
+  }
+}
+
+/* EXTRA ICON */
+.fc-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--royal);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+.fc-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: #fff;
+}
+
+  /* ---------- About ---------- */
+  .about-grid{ display:grid; grid-template-columns:.85fr 1.15fr; gap:70px; align-items:center; }
+  .about-portrait{
+    position:relative; border-radius:26px; overflow:hidden; aspect-ratio:4/5;
+    background:linear-gradient(160deg, var(--navy), #1b2a4d 55%, var(--royal));
+    display:flex; align-items:flex-end; justify-content:center;
+  }
+  .about-portrait img{ width:100%; height:100%; object-fit:cover; position:relative; z-index:1; }
+  .about-portrait::before{
+    content:''; position:absolute; inset:0; z-index:2; pointer-events:none;
+    background:radial-gradient(circle at 30% 20%, rgba(59,130,246,.35), transparent 55%);
+  }
+  .about-badge{
+    position:absolute; bottom:22px; left:22px; right:22px;
+    background:rgba(255,255,255,.92); backdrop-filter:blur(6px); border-radius:16px;
+    padding:14px 18px; display:flex; align-items:center; gap:12px; z-index:3;
+  }
+  .about-badge b{ font-family:'Poppins'; font-size:15px; display:block; }
+  .about-badge span{ font-size:12px; color:#667; }
+  .about-copy p{ color:#525c6b; font-size:17px; margin-bottom:26px; max-width:540px; }
+  .stat-row{ display:flex; gap:44px; margin-top:44px; flex-wrap:wrap; }
+  .stat-row div b{ font-family:'Poppins'; font-size:36px; color:var(--royal); display:block; }
+  .stat-row div span{ font-size:13.5px; color:#6b7280; }
+
+  /* ---------- Courses ---------- */
+/* ---------- Courses ---------- */
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.course-card {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  height: 400px;
+
+  background: var(--navy);
+  border: 1px solid rgba(15, 23, 42, .08);
+  box-shadow: 0 14px 30px -20px rgba(15, 23, 42, .4);
+
+  transition:
+    transform .4s var(--ease),
+    box-shadow .4s var(--ease);
+
+  cursor: pointer;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-soft);
+}
+
+
+/* ---------- COURSE IMAGE - ALWAYS VISIBLE ---------- */
+
+.course-image {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+
+  transition: transform .6s var(--ease);
+}
+
+.course-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: top center;
+}
+
+
+/* Slight zoom when hovering */
+.course-card:hover .course-image {
+  transform: scale(1.03);
+}
+
+
+/* ---------- HOVER OVERLAY ---------- */
+
+.course-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 26px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  background: linear-gradient(
+    0deg,
+    rgba(6, 10, 20, .95) 0%,
+    rgba(6, 10, 20, .65) 45%,
+    rgba(6, 10, 20, .05) 85%
+  );
+
+  transform: translateY(10px);
+
+  transition:
+    opacity .4s var(--ease),
+    transform .4s var(--ease),
+    visibility 0s linear .4s;
+}
+
+
+/* ---------- SHOW TEXT ON HOVER ---------- */
+
+.course-card:hover .course-overlay {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+
+  transition:
+    opacity .4s var(--ease),
+    transform .4s var(--ease);
+}
+
+
+/* ---------- OVERLAY TEXT ---------- */
+
+.course-overlay h4 {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.25;
+  margin-bottom: 6px;
+}
+
+.course-overlay .course-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 16px;
+}
+
+.course-overlay .course-price b {
+  color: #fff;
+  font-family: 'Poppins';
+  font-size: 22px;
+}
+
+.course-overlay .course-price s {
+  color: #8b95a8;
+  font-size: 13px;
+}
+
+.course-overlay .btn {
+  align-self: flex-start;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 900px) {
+  .courses-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-card {
+    height: 340px;
+  }
+}
+
+  /* ---------- Why choose ---------- */
+  .why-section{ background:var(--alt); }
+  .why-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:rgba(15,23,42,.08); border:1px solid rgba(15,23,42,.08); border-radius:22px; overflow:hidden; }
+  .why-card{ background:#fff; padding:36px 30px; transition:background .3s ease, color .3s ease, transform .3s ease; }
+  .why-card:hover{ background:#111827; color:#fff; transform:translateY(-4px); }
+  .why-card:hover h4, .why-card:hover p{ color:#fff; }
+  .why-card:hover svg{ stroke:#fff; }
+  .why-icon{ width:44px; height:44px; margin-bottom:18px; }
+  .why-icon svg{ width:100%; height:100%; stroke:var(--royal); transition:stroke .3s ease; }
+  .why-card h4{ font-size:16.5px; margin-bottom:8px; }
+  .why-card p{ font-size:13.5px; color:#6b7280; }
+  @media(max-width:900px){ .why-grid{ grid-template-columns:1fr 1fr; } }
+  @media(max-width:560px){ .why-grid{ grid-template-columns:1fr; } }
+
+  /* ---------- Diet Plan ---------- */
+  .insta-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .insta-card{ border-radius:18px; overflow:hidden; border:1px solid rgba(15,23,42,.08); background:#fff; box-shadow:0 10px 30px -18px rgba(15,23,42,.2); }
+  .insta-card .ig-media{ padding:26px 22px; color:#fff; }
+  .ig-media p{ font-family:'Poppins'; font-weight:800; line-height:1.2; }
+  .insta-card .ig-media.ig-1{ background:linear-gradient(150deg,var(--navy),var(--royal)); color:#fff; }
+  .ig-1 p{ font-size:22px; }
+  .insta-card .ig-media.ig-2{ background:linear-gradient(150deg,var(--electric),var(--royal)); color:#fff; }
+  .ig-2 p{ font-size:20px; }
+  .insta-card .ig-media.ig-3{ background:linear-gradient(150deg,var(--royal),var(--electric)); color:#fff; }
+  .ig-caption{ padding:14px 20px 20px; font-size:13.5px; color:#5b6472; }
+  @media(max-width:900px){ .insta-grid{ grid-template-columns:1fr; } }
+
+  .diet-gallery{
+    display:grid; grid-template-columns:repeat(5, 1fr); gap:20px; padding:6px 2px 18px;
+  }
+  .diet-card{
+    border-radius:18px; overflow:hidden; border:1px solid rgba(15,23,42,.08); display:flex; flex-direction:column;
+    box-shadow:0 14px 30px -18px rgba(15,23,42,.25); background:#fff;
+    transition:transform .35s var(--ease), box-shadow .35s var(--ease);
+  }
+  .diet-card:hover{ transform:translateY(-6px); box-shadow:0 22px 40px -16px rgba(15,23,42,.3); }
+  .diet-card .diet-img{ width:100%; aspect-ratio:4/5; object-fit:cover; display:block; background:linear-gradient(150deg,var(--navy),var(--royal)); }
+  .diet-card .diet-card-body{ padding:14px 16px 18px; flex:1; }
+  .diet-card .diet-card-body span{ display:block; font-size:13.5px; font-weight:700; color:var(--navy); font-family:'Poppins'; margin-bottom:6px; }
+  .diet-card .diet-card-body p{ font-size:12.5px; line-height:1.5; color:#6b7280; min-height:2.2em; margin:0; }
+  @media(max-width:1100px){ .diet-gallery{ grid-template-columns:repeat(3, 1fr); } }
+  @media(max-width:640px){ .diet-gallery{ grid-template-columns:repeat(2, 1fr); } }
+  @media(max-width:420px){ .diet-gallery{ grid-template-columns:1fr; } }
+
+  /* ---------- Free guide ---------- */
+  .guide-section{
+    background:linear-gradient(135deg, var(--royal), #0c3fd1);
+    border-radius:32px; padding:70px 60px; color:#fff;
+    display:grid; grid-template-columns:1.1fr .9fr; gap:50px; align-items:center;
+    position:relative; overflow:hidden;
+  }
+  .guide-section::before{ content:''; position:absolute; width:400px; height:400px; border-radius:50%; background:rgba(255,255,255,.08); top:-160px; right:-120px; }
+  .guide-tag{ display:inline-block; background:rgba(255,255,255,.16); padding:8px 16px; border-radius:100px; font-size:12.5px; font-weight:700; letter-spacing:.04em; margin-bottom:18px; }
+  .guide-section h2{ color:#fff; font-size:clamp(24px,3.4vw,32px); line-height:1.25; margin-bottom:14px; }
+  .guide-section p{ color:rgba(255,255,255,.85); font-size:15.5px; max-width:440px; }
+  .guide-form{ background:#fff; border-radius:20px; padding:34px; position:relative; z-index:2; }
+  .guide-form label{ font-size:12.5px; font-weight:600; color:#5b6472; display:block; margin-bottom:6px; }
+  .guide-form input{
+    width:100%; padding:13px 16px; border-radius:10px; border:1.5px solid #e5e9f2; margin-bottom:18px;
+    font-family:'Inter'; font-size:14.5px; color:var(--text); transition:border-color .25s ease;
+  }
+  .guide-form input:focus{ outline:none; border-color:var(--royal); }
+  .guide-form .btn{ width:100%; }
+  @media(max-width:900px){ .guide-section{ grid-template-columns:1fr; padding:46px 28px; border-radius:24px; } }
+
+  /* ---------- Testimonials ---------- */
+  .testi-section{ background:var(--navy); overflow:hidden; }
+  .testi-section .section-head h2, .testi-section .section-head p{ color:#fff; }
+  .testi-section .section-head p{ color:#9aa5b8; }
+  .testi-track{ display:flex; gap:24px; transition:transform .6s var(--ease); }
+  .testi-card{
+    flex:0 0 calc(33.333% - 16px); background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
+    backdrop-filter:blur(10px); border-radius:20px; padding:30px; color:#fff;
+  }
+  .stars{ display:flex; gap:4px; margin-bottom:16px; }
+  .testi-card p.quote{ font-size:14.5px; color:#d3d9e5; margin-bottom:24px; }
+  .testi-person{ display:flex; align-items:center; gap:12px; }
+  .testi-avatar{ width:42px; height:42px; border-radius:50%; background:var(--royal); display:flex; align-items:center; justify-content:center; font-family:'Poppins'; font-weight:700; font-size:14px; flex:none;}
+  .testi-person b{ display:block; font-size:14px; }
+  .testi-person span{ font-size:12px; color:#8b95a8; }
+  .testi-dots{ display:flex; justify-content:center; gap:8px; margin-top:36px; }
+  .testi-dots button{ width:8px; height:8px; border-radius:50%; background:rgba(255,255,255,.25); border:none; cursor:pointer; transition:.3s; }
+  .testi-dots button.active{ background:var(--royal); width:24px; border-radius:5px; }
+  @media(max-width:900px){ .testi-card{ flex:0 0 100%; } }
+
+  /* ---------- CTA ---------- */
+  .cta-final{
+    background:linear-gradient(120deg, var(--navy) 0%, #0d1f45 45%, var(--royal) 130%);
+    border-radius:32px; padding:80px 40px; text-align:center; color:#fff; position:relative; overflow:hidden;
+  }
+  .cta-final h2{ color:#fff; font-size:clamp(28px,4.4vw,44px); margin-bottom:16px; }
+  .cta-final p{ color:#c3cbdb; font-size:17px; margin-bottom:36px; }
+  .cta-btns{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+
+  /* ---------- Footer ---------- */
+  footer{ background:var(--navy); color:#c3cbdb; padding:80px 0 30px; }
+  .footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; padding-bottom:56px; border-bottom:1px solid rgba(255,255,255,.08); }
+  .footer-brand .brand{ color:#fff; margin-bottom:16px; }
+  .footer-brand p{ font-size:14px; color:#8b95a8; max-width:280px; }
+  .footer-col h5{ font-family:'Poppins'; font-size:14px; color:#fff; margin-bottom:18px; }
+  .footer-col a{ display:block; font-size:14px; color:#9aa5b8; margin-bottom:12px; transition:color .25s ease; }
+  .footer-col a:hover{ color:var(--electric); }
+  .footer-bottom{ display:flex; justify-content:space-between; align-items:center; padding-top:26px; flex-wrap:wrap; gap:16px; }
+  .footer-social{ display:flex; gap:12px; }
+  .footer-social a{ width:38px; height:38px; border-radius:50%; background:rgba(255,255,255,.06); display:flex; align-items:center; justify-content:center; }
+  .footer-social svg{ width:16px; height:16px; stroke:#fff; }
+  .footer-bottom p{ font-size:13px; color:#7c869b; margin:0; }
+  .footer-bottom a{ color:#5b9bff; font-weight:600; }
+  .footer-bottom a:hover{ text-decoration:underline; }
+  @media(max-width:900px){ .footer-grid{ grid-template-columns:1fr 1fr; } }
+  @media(max-width:560px){ .footer-grid{ grid-template-columns:1fr; } }
+
+  .book-modal-overlay{ position:fixed; inset:0; background:rgba(9,13,25,.6); backdrop-filter:blur(4px); z-index:1200; display:none; align-items:center; justify-content:center; padding:20px; }
+  .book-modal-overlay.open{ display:flex; }
+  .book-modal{ background:#fff; border-radius:22px; padding:40px; max-width:420px; width:100%; position:relative; }
+  .book-modal h3{ font-size:22px; margin-bottom:10px; }
+  .book-modal p{ color:#5b6472; font-size:14.5px; margin-bottom:24px; }
+  .book-modal input{ width:100%; padding:13px 16px; border-radius:10px; border:1.5px solid #e5e9f2; margin-bottom:16px; font-family:'Inter'; font-size:14.5px; }
+  .book-modal input:focus{ outline:none; border-color:var(--royal); }
+  .book-close{ position:absolute; top:18px; right:18px; background:none; border:none; font-size:22px; cursor:pointer; color:#9aa5b8; }
+
+  /* =========================================================
+     FINAL RESPONSIVE FIX
+     Desktop: 1025px+
+     Tablet: 769px - 1024px
+     Mobile: 0 - 768px
+     ========================================================= */
+
+  /* Prevent accidental horizontal overflow from wide children */
+  html, body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    width:100%;
+    padding:14px 0;
+  }
+
+  header .navbar{
+    width:calc(100% - 40px);
+    max-width:1240px;
+    min-width:0;
+  }
+
+  @media (max-width:1024px){
+    header{
+      padding:10px 0;
+    }
+
+    header .navbar{
+      width:calc(100% - 24px);
+      padding:8px 12px !important;
+      border-radius:24px;
+      gap:10px;
+    }
+
+    .nav-links{
+      display:none;
+    }
+
+    .nav-cta{
+      display:none;
+    }
+
+    .hamburger{
+      display:flex;
+      flex:0 0 auto;
+      margin-left:auto;
+    }
+
+    .brand{
+      min-width:0;
+      max-width:calc(100% - 44px);
+      gap:8px;
+    }
+
+    .brand img{
+      width:42px;
+      height:42px;
+      flex:0 0 42px;
+    }
+
+    .brand span{
+      min-width:0;
+      font-size:14px;
+      line-height:1.1;
+      white-space:nowrap;
+    }
+
+    .brand small{
+      font-size:8px;
+      margin-top:3px;
+      white-space:nowrap;
+    }
+  }
+
+  @media (max-width:600px){
+    header .navbar{
+      width:calc(100% - 16px);
+      padding:7px 10px !important;
+      border-radius:22px;
+    }
+
+    .brand{
+      gap:7px;
+      max-width:calc(100% - 38px);
+    }
+
+    .brand img{
+      width:38px;
+      height:38px;
+      flex-basis:38px;
+      border-radius:8px;
+    }
+
+    .brand span{
+      font-size:12px;
+      letter-spacing:0;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .brand small{
+      font-size:7px;
+      letter-spacing:.08em;
+    }
+
+    .hamburger{
+      padding:5px;
+    }
+
+    .hamburger span{
+      width:21px;
+    }
+  }
+
+  /* ---------- Floating social ---------- */
+  @media (max-width:1024px){
+    .float-social{
+      display:none;
+    }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    width:100%;
+    min-height:100vh;
+    min-height:100svh;
+  }
+
+  .hero .wrap{
+    min-width:0;
+  }
+
+  .hero-top-row,
+  .hero-bottom-row{
+    min-width:0;
+  }
+
+  .hero-eyebrow{
+    max-width:100%;
+  }
+
+  .hero-chip{
+    width:300px;
+    min-width:0;
+    max-width:100%;
+  }
+
+  .hero-heading{
+    min-width:0;
+  }
+
+  @media (max-width:1024px){
+    .hero{
+      min-height:auto;
+      padding:130px 0 65px;
+      align-items:flex-start;
+    }
+
+    .hero-top-row{
+      flex-direction:column;
+      align-items:flex-start;
+      gap:22px;
+      margin-bottom:36px;
+    }
+
+    .hero-eyebrow{
+      font-size:12.5px;
+      padding:8px 14px 8px 12px;
+    }
+
+    .hero-chip{
+      width:100%;
+      max-width:360px;
+      height:70px;
+    }
+
+    .hero-chip-slide{
+      padding:14px 16px;
+    }
+
+    .hero-bottom-row{
+      flex-direction:column;
+      align-items:flex-start;
+      gap:30px;
+    }
+
+    .hero-heading h1{
+      max-width:760px;
+      font-size:clamp(42px,7vw,60px);
+      line-height:1.02;
+      letter-spacing:-1.2px;
+    }
+
+    .hero-heading .hero-btns{
+      margin-top:26px;
+    }
+
+    .hero-stats{
+      margin-top:34px;
+      gap:28px;
+    }
+
+    .hero-side{
+      max-width:320px;
+      text-align:left;
+    }
+
+    .hero-bg{
+      background-position:62% center;
+    }
+  }
+
+  @media (max-width:768px){
+    .hero{
+      padding:112px 0 52px;
+    }
+
+    .hero-top-row{
+      gap:18px;
+      margin-bottom:28px;
+    }
+
+    .hero-eyebrow{
+      width:100%;
+      max-width:100%;
+      line-height:1.45;
+      white-space:normal;
+    }
+
+   .hero-chip{
+    width:49%;
+    max-width:280px;
+    height:69px;
+    border-radius:16px;
+    margin-left:0;
+    margin-right:auto;
+}
+
+
+    .hero-chip-slide{
+      padding:13px 14px;
+      gap:11px;
+    }
+
+    .hero-chip-icon{
+      width:36px;
+      height:36px;
+      border-radius:9px;
+    }
+
+    .hero-chip-slide b{
+      font-size:14px;
+    }
+
+    .hero-chip-slide span{
+      display:block;
+      font-size:11px;
+      line-height:1.35;
+    }
+
+    .hero-bottom-row{
+      gap:26px;
+    }
+
+    .hero-heading h1{
+      max-width:100%;
+      font-size:clamp(38px,10.5vw,52px);
+      line-height:1.02;
+      letter-spacing:-1px;
+    }
+
+    .hero-heading .hero-btns{
+      width:100%;
+      gap:10px;
+      margin-top:24px;
+    }
+
+    .hero-heading .hero-btns .btn{
+      min-height:48px;
+      padding:13px 20px;
+    }
+
+    .hero-stats{
+      width:100%;
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:14px;
+      margin-top:32px;
+    }
+
+    .hero-stats div{
+      min-width:0;
+    }
+
+    .hero-stats div b{
+      font-size:23px;
+    }
+
+    .hero-stats div span{
+      display:block;
+      font-size:11px;
+      line-height:1.35;
+    }
+
+    .hero-side{
+      display:none;
+    }
+
+    .hero-bg{
+      background-position:62% center;
+    }
+  }
+  
+    
+
+  @media (max-width:420px){
+    .hero{
+      padding-top:106px;
+    }
+
+    .hero-heading h1{
+      font-size:clamp(35px,10.5vw,44px);
+    }
+
+    .hero-heading .hero-btns{
+      flex-direction:column;
+    }
+
+    .hero-heading .hero-btns .btn{
+      width:100%;
+    }
+
+    .hero-stats{
+      gap:8px;
+    }
+
+    .hero-stats div b{
+      font-size:21px;
+    }
+
+    .hero-stats div span{
+      font-size:10px;
+    }
+  }
+
+  /* ---------- About ---------- */
+  .about-grid{
+    min-width:0;
+  }
+
+  .about-copy{
+    min-width:0;
+  }
+
+  @media (max-width:1024px){
+    .about-grid{
+      grid-template-columns:1fr;
+      gap:46px;
+      max-width:760px;
+      margin:0 auto;
+    }
+
+    .about-portrait{
+      width:100%;
+      max-width:560px;
+      margin:0 auto;
+    }
+
+    .about-copy p{
+      font-size:16px;
+    }
+
+    .stat-row{
+      gap:30px;
+      margin-top:34px;
+    }
+  }
+
+  @media (max-width:768px){
+    #about{
+      overflow:hidden;
+    }
+
+    .about-grid{
+      gap:34px;
+    }
+
+    .about-portrait{
+      border-radius:20px;
+      aspect-ratio:4/5;
+    }
+
+    .about-badge{
+      left:12px;
+      right:12px;
+      bottom:12px;
+      padding:11px 12px;
+      gap:9px;
+      border-radius:13px;
+    }
+
+    .about-badge b{
+      font-size:13px;
+    }
+
+    .about-badge span{
+      font-size:10.5px;
+      line-height:1.3;
+    }
+
+    .about-copy p{
+      font-size:15px;
+      line-height:1.7;
+      margin-bottom:20px;
+    }
+
+    .stat-row{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:14px;
+      margin-top:28px;
+    }
+
+    .stat-row div{
+      min-width:0;
+    }
+
+    .stat-row div b{
+      font-size:28px;
+    }
+
+    .stat-row div span{
+      display:block;
+      font-size:11px;
+      line-height:1.35;
+    }
+  }
+
+  @media (max-width:420px){
+    .stat-row{
+      gap:8px;
+    }
+
+    .stat-row div b{
+      font-size:25px;
+    }
+
+    .stat-row div span{
+      font-size:10px;
+    }
+  }
+
+  /* ---------- Global tablet/mobile spacing ---------- */
+  @media (max-width:1024px){
+    .wrap{
+      width:100%;
+      max-width:100%;
+      padding-left:24px;
+      padding-right:24px;
+    }
+
+    .section-pad{
+      padding-top:80px;
+      padding-bottom:80px;
+    }
+
+    .section-head{
+      margin-bottom:38px;
+    }
+  }
+
+  @media (max-width:768px){
+    .wrap{
+      padding-left:16px;
+      padding-right:16px;
+    }
+
+    .section-pad{
+      padding-top:64px;
+      padding-bottom:64px;
+    }
+
+    .section-head{
+      margin-bottom:32px;
+    }
+
+    .section-head p{
+      font-size:15px;
+    }
+
+    .btn{
+      max-width:100%;
+    }
+
+    .guide-section,
+    .cta-final{
+      width:100%;
+    }
+  }
+
+  /* ---------- Course cards: no hover-only content on touch devices ---------- */
+  @media (max-width:1024px){
+
+    .course-overlay{
+        opacity:0;
+        visibility:hidden;
+        transform:translateY(20px);
+        transition:.3s ease;
+    }
+
+    .course-card.active .course-overlay{
+        opacity:1;
+        visibility:visible;
+        transform:translateY(0);
+    }
+
+    .course-card:hover{
+        transform:none;
+    }
+
+    .course-card:hover .course-image{
+        transform:none;
+    }
+}
+  /* ---------- Prevent media/content from creating horizontal overflow ---------- */
+  .course-card,
+  .course-image,
+  .course-overlay,
+  .guide-section,
+  .guide-form,
+  .cta-final,
+  .testi-section,
+  .testi-track,
+  .insta-card,
+  .diet-card{
+    min-width:0;
+    max-width:100%;
+  }
+
+  input,
+  button,
+  textarea,
+  select{
+    max-width:100%;
+  }
+
+  @media (max-width:1024px){
+    body.menu-open{ overflow:hidden; }
+  }
+
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="navbar wrap" style="padding:10px 20px;">
+    <a href="#home" class="brand">
+      <img src="logo.png" alt="Slave To Biology logo">
+      <span>SLAVE TO BIOLOGY<small>LEARN · UNDERSTAND · EVOLVE</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#diet">Diet Plan</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <div class="faq-dropdown-wrap">
+        <button class="btn btn-ghost" id="faqTrigger" onclick="toggleFaqDropdown(event)">FAQ</button>
+        <div class="faq-dropdown" id="faqDropdown">
+          <div class="faq-dropdown-head">Questions, answered</div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)"><h4>How does a masterclass work?</h4><div class="faq-plus"></div></div>
+            <div class="faq-a"><p>Each masterclass is a live 1-day session on Google Meet or Zoom, followed by a Q&A and a take-home guide you can apply right away.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)"><h4>Do I get a customized diet?</h4><div class="faq-plus"></div></div>
+            <div class="faq-a"><p>Yes — every nutrition plan is built around your preferences, schedule and goals, not a fixed meal template.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)"><h4>How do I book a seat?</h4><div class="faq-plus"></div></div>
+            <div class="faq-a"><p>Tap "Book Now" on any course card, message us on WhatsApp, or call +91 91525 59585 — seats are limited per batch.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)"><h4>Can beginners join?</h4><div class="faq-plus"></div></div>
+            <div class="faq-a"><p>Absolutely. Every masterclass is built from your current starting point, whether that's day one or year ten.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)"><h4>Do I need supplements?</h4><div class="faq-plus"></div></div>
+            <div class="faq-a"><p>No. Supplements are optional and only ever recommended where they genuinely fill a gap in your diet.</p></div>
+          </div>
+        </div>
+      </div>
+      <a class="wa-icon-btn" href="https://wa.me/919152559585?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20your%20masterclasses" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32"><path d="M16.02 3C9.4 3 4 8.37 4 15c0 2.44.72 4.71 1.96 6.62L4 29l7.58-1.9A11.9 11.9 0 0 0 16.02 27C22.63 27 28 21.63 28 15S22.63 3 16.02 3Zm0 21.6c-1.98 0-3.83-.55-5.4-1.5l-.39-.23-4.5 1.13 1.2-4.38-.25-.4A9.55 9.55 0 0 1 6.4 15c0-5.3 4.32-9.6 9.62-9.6 5.3 0 9.6 4.3 9.6 9.6 0 5.3-4.3 9.6-9.6 9.6Zm5.27-7.2c-.29-.15-1.71-.85-1.97-.94-.27-.1-.46-.15-.65.14-.2.3-.75.94-.92 1.13-.17.2-.34.22-.63.08-.29-.15-1.22-.45-2.32-1.44-.86-.76-1.44-1.71-1.6-2-.17-.3-.02-.46.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.08-.15-.65-1.58-.9-2.16-.24-.57-.48-.49-.65-.5h-.56c-.2 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.44 0 1.44 1.05 2.83 1.2 3.03.15.2 2.06 3.14 4.99 4.4.7.3 1.24.48 1.67.61.7.22 1.34.19 1.84.12.56-.08 1.71-.7 1.96-1.37.24-.68.24-1.26.17-1.38-.07-.13-.26-.2-.55-.35Z"/></svg>
+      </a>
+      <button class="btn btn-primary" onclick="openBooking()">Book Consultation</button>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">&times;</button>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#courses">Courses</a>
+  <a href="#diet">Diet Plan</a>
+  <a href="#contact">Contact</a>
+  <a href="https://wa.me/919152559585" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:10px;">
+    <svg viewBox="0 0 32 32" width="22" height="22" fill="#25D366"><path d="M16.02 3C9.4 3 4 8.37 4 15c0 2.44.72 4.71 1.96 6.62L4 29l7.58-1.9A11.9 11.9 0 0 0 16.02 27C22.63 27 28 21.63 28 15S22.63 3 16.02 3Z"/></svg>
+    WhatsApp Us
+  </a>
+  <button class="btn btn-ghost" style="color:#fff; border-color:rgba(255,255,255,.3);" onclick="mobileMenu.classList.remove('open'); toggleFaqDropdown(event, true);">FAQ</button>
+  <button class="btn btn-primary" onclick="openBooking()">Book Consultation</button>
+</div>
+
+<div class="float-social">
+  <a href="https://www.youtube.com/@sahilpandey4873" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.5V8.5l6.3 3.5-6.3 3.5Z"/></svg>
+    <span>Subscribe on YouTube</span>
+  </a>
+  <a href="https://www.instagram.com/slavetobiology/" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+    <span>Follow Instagram</span>
+  </a>
+  <a href="https://linktr.ee/SlaveToBiology" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 0 0 7.5.5l2-2a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.5-.5l-2 2a5 5 0 0 0 7 7l1.5-1.5"/></svg>
+    <span>All Links</span>
+  </a>
+</div>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-lines"></div>
+    <div class="wrap">
+
+      <div class="hero-top-row">
+        <div class="hero-eyebrow"><span class="dot"></span> Certified Nutritionist & Personal Trainer</div>
+
+        <div class="hero-chip" id="heroChip">
+          <div class="hero-chip-slide active" data-bg="exercise">
+            <div class="hero-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5l11 11M4 9.5l3-3M17.5 20.5l3-3M2 12l2-2 2 2-2 2zM18 6l2-2 2 2-2 2z"/></svg></div>
+            <div><b>Exercise</b><span>Structured training plans</span></div>
+          </div>
+          <div class="hero-chip-slide" data-bg="diet">
+            <div class="hero-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 1 5 5c0 3-2 4-2 7h-6c0-3-2-4-2-7a5 5 0 0 1 5-5Z"/><path d="M10 18h4v2a2 2 0 0 1-4 0v-2Z"/></svg></div>
+            <div><b>Diet Chart</b><span>Personalized nutrition plans</span></div>
+          </div>
+          <div class="hero-chip-slide" data-bg="motivation">
+            <div class="hero-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 19h16M8 15l3-4 3 3 4-6"/></svg></div>
+            <div><b>Motivation</b><span>Weekly accountability</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bottom-row">
+        <div class="hero-heading">
+          <h1>Transform Your Body Using <em>Science,</em>Not Guesswork</h1>
+          <div class="hero-btns">
+            <a href="#courses" class="btn btn-primary">See The Courses</a>
+            <a href="#contact" class="btn btn-ghost" style="color:#fff; border-color:rgba(255,255,255,.25);">Contact Us</a>
+          </div>
+          <div class="hero-stats">
+            <div><b>10+</b><span>Years Experience</span></div>
+            <div><b>200+</b><span>Clients Guided</span></div>
+            <div><b>7</b><span>Live Masterclasses</span></div>
+          </div>
+        </div>
+        <div class="hero-side">
+          <p>The fastest way to become a better athlete</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section-pad" id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="reveal about-portrait">
+          <img src="coach.png" alt="Sahil Pandey — Certified Nutritionist & Personal Trainer">
+          <div class="about-badge">
+            <div class="fc-icon" style="background:var(--royal);"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 20 12 16.5 6.5 20 8 13.5 3 9l6.5-.5Z"/></svg></div>
+            <div><b>Sahil Pandey</b><span>Certified Nutritionist & PT · 10+ yrs</span></div>
+          </div>
+        </div>
+        <div class="about-copy reveal">
+          <div class="eyebrow">About the coach</div>
+          <h2 style="font-size:clamp(26px,3.6vw,38px); margin-bottom:20px;">Meet Your Coach</h2>
+          <p>Hi, I'm Sahil Pandey — Certified Nutritionist and Personal Trainer with 10+ years of experience, and this is Slave To Biology, where I share everything I've learned about fitness, nutrition and human biology to help you build a stronger, healthier body using science instead of myths.</p>
+          <p>Every program is built on evidence, not trends — so the results you build actually stay.</p>
+          <div class="stat-row">
+            <div><b class="counter" data-target="10">0</b><span>Years Experience</span></div>
+            <div><b class="counter" data-target="200">0</b><span>Clients Helped</span></div>
+            <div><b class="counter" data-target="50">0</b><span>Transformation Stories</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section class="section-pad" id="courses" style="background:var(--alt);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Live Masterclasses</div>
+        <h2>Pick the masterclass built for what's holding you back</h2>
+        <p>1-day live sessions on Google Meet / Zoom. Hover a card to preview it — tap Book Now to grab a seat.</p>
+      </div>
+      <div class="courses-grid">
+
+        <div class="course-card reveal">
+          <div class="course-face">
+            <div class="course-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 2v4M12 18v4M4 12H2M22 12h-2M5 5l2 2M19 5l-2 2M5 19l2-2M19 19l-2-2"/><circle cx="12" cy="12" r="5"/></svg></div>
+            <div>
+              <span class="course-tag">Joint Health</span>
+              <h3>Arthritis & Osteoarthritis Management</h3>
+              <div class="course-hint" style="margin-top:14px;"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg> Hover to preview</div>
+            </div>
+          </div>
+          <div class="course-image"><img src="arthritis-osteoarthritis.png" alt="Arthritis & Osteoarthritis Management Masterclass"></div>
+          <div class="course-overlay">
+            <h4>Arthritis & Osteoarthritis Management</h4>
+            <div class="course-price"><b>₹499</b><span style="color:#c3cbdb; font-size:12.5px;">1-day live · Google Meet</span></div>
+            <a class="btn btn-primary btn-sm" href="https://wa.me/919152559585?text=Hi%2C%20I%27d%20like%20to%20book%20the%20Arthritis%20%26%20Osteoarthritis%20Masterclass" target="_blank" rel="noopener">Book Now</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal">
+          <div class="course-face">
+            <div class="course-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6.5 6.5l11 11M4 9.5l3-3M17.5 20.5l3-3M2 12l2-2 2 2-2 2zM18 6l2-2 2 2-2 2z"/></svg></div>
+            <div>
+              <span class="course-tag">Knee · Elbow · Wrist · Shoulder</span>
+              <h3>Joint Pain Management</h3>
+              <div class="course-hint" style="margin-top:14px;"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg> Hover to preview</div>
+            </div>
+          </div>
+          <div class="course-image"><img src="joint-pain-management.png" alt="Joint Pain Management Masterclass"></div>
+          <div class="course-overlay">
+            <h4>Joint Pain Management</h4>
+            <div class="course-price"><b>₹499</b><span style="color:#c3cbdb; font-size:12.5px;">1-day live · Google Meet</span></div>
+            <a class="btn btn-primary btn-sm" href="https://wa.me/919152559585?text=Hi%2C%20I%27d%20like%20to%20book%20the%20Joint%20Pain%20Management%20Masterclass" target="_blank" rel="noopener">Book Now</a>
+          </div>
+        </div>
+
+       
+
+        <div class="course-card reveal">
+          <div class="course-face">
+            <div class="course-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div>
+            <div>
+              <span class="course-tag">Work Stress → Body Stress</span>
+              <h3>Long Hours. Less Movement. More Pain.</h3>
+              <div class="course-hint" style="margin-top:14px;"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg> Hover to preview</div>
+            </div>
+          </div>
+          <div class="course-image"><img src="posture-work-stress.png" alt="Posture & Work Stress Masterclass"></div>
+          <div class="course-overlay">
+            <h4>Posture & Desk-Work Recovery</h4>
+            <div class="course-price"><b>₹499</b><span style="color:#c3cbdb; font-size:12.5px;">1-day live · Google Meet</span></div>
+            <a class="btn btn-primary btn-sm" href="https://wa.me/919152559585?text=Hi%2C%20I%27d%20like%20to%20book%20the%20Posture%20%26%20Work%20Stress%20Masterclass" target="_blank" rel="noopener">Book Now</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal">
+          <div class="course-face">
+            <div class="course-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+            <div>
+              <span class="course-tag">Recover Smart. Train Smarter.</span>
+              <h3>Injury Rehab & Recovery</h3>
+              <div class="course-hint" style="margin-top:14px;"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg> Hover to preview</div>
+            </div>
+          </div>
+          <div class="course-image"><img src="injury-rehab-recovery.png" alt="Injury Rehab & Recovery Masterclass"></div>
+          <div class="course-overlay">
+            <h4>Injury Rehab & Recovery</h4>
+            <div class="course-price"><b>₹499</b><span style="color:#c3cbdb; font-size:12.5px;">1-day live · Google Meet</span></div>
+            <a class="btn btn-primary btn-sm" href="https://wa.me/919152559585?text=Hi%2C%20I%27d%20like%20to%20book%20the%20Injury%20Rehab%20%26%20Recovery%20Masterclass" target="_blank" rel="noopener">Book Now</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal">
+          <div class="course-face">
+            <div class="course-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+            <div>
+              <span class="course-tag">Nutritionist & Personal Trainer</span>
+              <h3>Weight Loss Transformation</h3>
+              <div class="course-hint" style="margin-top:14px;"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg> Hover to preview</div>
+            </div>
+          </div>
+          <div class="course-image"><img src="weight-loss-transformation.png" alt="Weight Loss Transformation Masterclass"></div>
+          <div class="course-overlay">
+            <h4>Weight Loss Transformation</h4>
+            <div class="course-price"><b>₹499</b><span style="color:#c3cbdb; font-size:12.5px;">Up to 4–5kg in 1 month*</span></div>
+            <a class="btn btn-primary btn-sm" href="https://wa.me/919152559585?text=Hi%2C%20I%27d%20like%20to%20book%20the%20Weight%20Loss%20Transformation%20Masterclass" target="_blank" rel="noopener">Book Now</a>
+          </div>
+        </div>
+
+        <div class="course-card reveal" style="grid-column: span 1;">
+          <div class="course-face">
+            <div class="course-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 4.5-4 8-8 11Z"/></svg></div>
+            <div>
+              <span class="course-tag">Understand. Balance. Thrive.</span>
+              <h3>PCOD & PCOS Management</h3>
+              <div class="course-hint" style="margin-top:14px;"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg> Hover to preview</div>
+            </div>
+          </div>
+          <div class="course-image"><img src="pcod.png" alt="PCOD & PCOS Management Masterclass"></div>
+          <div class="course-overlay">
+            <h4>PCOD & PCOS Management</h4>
+            <div class="course-price"><b>₹499</b><s>₹6000</s></div>
+            <a class="btn btn-primary btn-sm" href="https://wa.me/919152559585?text=Hi%2C%20I%27d%20like%20to%20book%20the%20PCOD%20%26%20PCOS%20Management%20Masterclass" target="_blank" rel="noopener">Book Now</a>
+          </div>
+        </div>
+
+      </div>
+      <div style="text-align:center; margin-top:44px;">
+        <a class="btn btn-primary" href="https://wa.me/919152559585?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20the%20masterclasses" target="_blank" rel="noopener">Call / WhatsApp +91 91525 59585</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="section-pad">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Why Slave To Biology</div>
+        <h2>Coaching that treats your biology as the starting point</h2>
+        <p>No fads. No shortcuts. Just the fundamentals, applied consistently.</p>
+      </div>
+      <div class="why-grid reveal">
+        <div class="why-card">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M12 2v4M12 18v4M4 12H2M22 12h-2M5 5l2 2M19 5l-2 2M5 19l2-2M19 19l-2-2"/><circle cx="12" cy="12" r="5"/></svg></div>
+          <h4>Evidence Based Nutrition</h4>
+          <p>Every recommendation is grounded in research, not trends.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M4 21v-6M4 9V3M12 21v-10M12 7V3M20 21v-4M20 13V3M2 15h4M10 11h4M18 17h4"/></svg></div>
+          <h4>Personalized Programs</h4>
+          <p>Built around your body, schedule and starting point.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <h4>Habit Coaching</h4>
+          <p>Small consistent changes that actually stick long-term.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M4 4v16h16"/><path d="M8 15l3-4 3 3 4-6"/></svg></div>
+          <h4>Weekly Check-ins</h4>
+          <p>Ongoing accountability so progress never stalls quietly.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg></div>
+          <h4>Fat Loss</h4>
+          <p>Sustainable deficit strategies without losing hard-earned muscle.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M6.5 6.5l11 11M4 9.5l3-3M17.5 20.5l3-3M2 12l2-2 2 2-2 2zM18 6l2-2 2 2-2 2z"/></svg></div>
+          <h4>Muscle Building</h4>
+          <p>Progressive programming built to add real, lasting strength.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIET PLAN -->
+  <section class="section-pad" id="diet">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Diet Plan</div>
+        <h2>Nutrition and training, explained simply</h2>
+        <p>A steady feed of practical, science-backed breakdowns you can actually use.</p>
+      </div>
+      <div class="insta-grid reveal">
+        <div class="insta-card">
+          <div class="ig-media ig-1"><p>Improve Protein Absorption</p></div>
+          <div class="ig-caption">It's not just about protein — it's about absorption. Zinc, magnesium, vitamin D and B vitamins all play a role.</div>
+        </div>
+        <div class="insta-card">
+          <div class="ig-media ig-2"><p>Protein isn't everything your body needs.</p></div>
+          <div class="ig-caption">Micronutrients from whole foods matter just as much as your protein target.</div>
+        </div>
+        <div class="insta-card">
+          <div class="ig-media ig-3"><p>Progressive Overload, Explained</p></div>
+          <div class="ig-caption">The one training principle that drives almost all long-term muscle growth.</div>
+        </div>
+      </div>
+
+      <div class="reveal" style="margin-top:50px;">
+        <div class="eyebrow">Diet Chart</div>
+        <h3 style="font-family:'Poppins'; font-size:20px; margin-bottom:18px;">Micronutrient breakdowns from the feed</h3>
+        <div class="diet-gallery">
+          <div class="diet-card">
+            <img class="diet-img" src="protein.png" alt="Nutrition is power — eat the rainbow" onerror="this.style.display='none'">
+            <div class="diet-card-body"><span>Protein Absorption</span><p>Better protein absorption for muscle growth and recovery.</p></div>
+          </div>
+          <div class="diet-card">
+            <img class="diet-img" src="muscle.png" alt="Vitamin A sources and benefits" onerror="this.style.display='none'">
+            <div class="diet-card-body"><span>Magnesium</span><p>Supports muscle function and protein synthesis.</p></div>
+          </div>
+          <div class="diet-card">
+            <img class="diet-img" src="vitamind.png" alt="B Vitamins sources and benefits" onerror="this.style.display='none'">
+            <div class="diet-card-body"><span>Vitamin D</span><p>Supports muscles, bones, and protein utilization.</p></div>
+          </div>
+          <div class="diet-card">
+            <img class="diet-img" src="zinc.png" alt="Supports muscle repair and enzyme function." onerror="this.style.display='none'">
+            <div class="diet-card-body"><span>Zinc</span><p>Boosts immunity and collagen production.</p></div>
+          </div>
+          <div class="diet-card">
+            <img class="diet-img" src="vitaminb6.png" alt="Supports amino acid metabolism and protein use" onerror="this.style.display='none'">
+            <div class="diet-card-body"><span>Vitamin B6</span><p>Essential for blood clotting and bone strength.</p></div>
+          </div>
+        </div>
+
+      <div style="text-align:center; margin-top:34px;">
+        <a href="https://www.instagram.com/slavetobiology/" target="_blank" rel="noopener" class="btn btn-ghost">Follow on Instagram</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TESTIMONIALS -->
+  <section class="section-pad testi-section">
+    <div class="wrap">
+      <div class="section-head center reveal" style="max-width:600px;">
+        <div class="eyebrow" style="color:var(--electric);">Client Results</div>
+        <h2>Real people, real transformations</h2>
+        <p>A few of the people who've built lasting change with a science-first approach.</p>
+      </div>
+      <div style="overflow:hidden;">
+        <div class="testi-track" id="testiTrack">
+          <div class="testi-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">I stopped guessing and started understanding why my body responds the way it does. Down 12kg and still eating food I enjoy.</p>
+            <div class="testi-person"><div class="testi-avatar">RK</div><div><b>Rohit K.</b><span>Weight Loss Masterclass, 8 months</span></div></div>
+          </div>
+          <div class="testi-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">The weekly check-ins kept me honest. First coach who explained the "why" behind every adjustment to my plan.</p>
+            <div class="testi-person"><div class="testi-avatar">AS</div><div><b>Aisha S.</b><span>PCOD Management, 5 months</span></div></div>
+          </div>
+          <div class="testi-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">Finally built visible strength without wrecking my joints. The programming is genuinely thoughtful, not copy-pasted.</p>
+            <div class="testi-person"><div class="testi-avatar">VM</div><div><b>Varun M.</b><span>Joint Pain Management, 1 year</span></div></div>
+          </div>
+          <div class="testi-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">Sahil's content on Instagram sold me before I even started — the coaching lives up to it completely.</p>
+            <div class="testi-person"><div class="testi-avatar">PN</div><div><b>Priya N.</b><span>Injury Rehab & Recovery, 6 months</span></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-dots" id="testiDots"></div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="section-pad" id="contact">
+    <div class="wrap">
+      <div class="cta-final reveal">
+        <h2>Ready To Transform?</h2>
+        <p>Let's build your strongest body using science. Call or WhatsApp +91 91525 59585.</p>
+        <div class="cta-btns">
+          <button class="btn btn-light" onclick="openBooking()">Book Consultation</button>
+          <a href="https://wa.me/919152559585" target="_blank" rel="noopener" class="btn btn-ghost" style="color:#fff; border-color:rgba(255,255,255,.3);">WhatsApp Us</a>
+          <a href="https://www.youtube.com/@sahilpandey4873" target="_blank" rel="noopener" class="btn btn-ghost" style="color:#fff; border-color:rgba(255,255,255,.3);">Watch Videos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand">
+          <img src="logo.png" alt="Slave To Biology logo">
+          <span>SLAVE TO BIOLOGY</span>
+        </a>
+        <p>Science-backed fitness and nutrition coaching with Sahil Pandey. Learn. Understand. Evolve.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#" onclick="toggleFaqDropdown(event, true); return false;">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Courses</h5>
+        <a href="#courses">Joint Pain Management</a>
+        <a href="#courses">Weight Loss Transformation</a>
+        <a href="#courses">PCOD & PCOS Management</a>
+        <a href="#courses">Injury Rehab & Recovery</a>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <a href="https://www.youtube.com/@sahilpandey4873" target="_blank" rel="noopener">YouTube</a>
+        <a href="#diet">Diet Plan</a>
+        <a href="https://linktr.ee/SlaveToBiology" target="_blank" rel="noopener">Linktree</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Slave To Biology.</p>
+      <div class="footer-social">
+        <a href="https://www.youtube.com/@sahilpandey4873" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M22 12a29 29 0 0 0-.4-5.3 2.8 2.8 0 0 0-2-2C17.9 4.2 12 4.2 12 4.2s-5.9 0-7.6.5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2 12a29 29 0 0 0 .4 5.3 2.8 2.8 0 0 0 2 2c1.7.5 7.6.5 7.6.5s5.9 0 7.6-.5a2.8 2.8 0 0 0 2-2A29 29 0 0 0 22 12Z"/><path d="M10 9.5v5l4.5-2.5Z"/></svg></a>
+        <a href="https://www.instagram.com/slavetobiology/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="https://linktr.ee/SlaveToBiology" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M10 13a5 5 0 0 0 7.5.5l2-2a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.5-.5l-2 2a5 5 0 0 0 7 7l1.5-1.5"/></svg></a>
+        <a href="https://wa.me/919152559585" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" fill="#fff"><path d="M16.02 3C9.4 3 4 8.37 4 15c0 2.44.72 4.71 1.96 6.62L4 29l7.58-1.9A11.9 11.9 0 0 0 16.02 27C22.63 27 28 21.63 28 15S22.63 3 16.02 3Z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="book-modal-overlay" id="bookModal">
+  <div class="book-modal">
+    <button class="book-close" onclick="closeBooking()">&times;</button>
+    <h3>Book Your Consultation</h3>
+    <p>Tell me a little about your goals and I'll follow up to schedule your first call. Or call/WhatsApp +91 91525 59585 directly.</p>
+    <form onsubmit="return handleBookingSubmit(event)">
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="you@email.com" required>
+      <input type="tel" placeholder="Phone number">
+      <button class="btn btn-primary" type="submit" style="width:100%;">Request Consultation</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  // Sticky header
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // Mobile menu
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileClose = document.getElementById('mobileClose');
+  function closeMobileMenu(){
+    mobileMenu.classList.remove('open');
+    document.body.classList.remove('menu-open');
+  }
+
+  hamburgerBtn.addEventListener('click', () => {
+    mobileMenu.classList.add('open');
+    document.body.classList.add('menu-open');
+  });
+
+  mobileClose.addEventListener('click', closeMobileMenu);
+
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', closeMobileMenu);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMobileMenu();
+  });
+
+  // Reveal on scroll
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Animated counters
+  const counters = document.querySelectorAll('.counter');
+  const counterIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseInt(el.dataset.target, 10);
+        let cur = 0;
+        const step = Math.max(1, Math.round(target / 60));
+        const t = setInterval(() => {
+          cur += step;
+          if (cur >= target) { cur = target; clearInterval(t); }
+          el.textContent = cur + '+';
+        }, 20);
+        counterIO.unobserve(el);
+      }
+    });
+  }, { threshold: 0.4 });
+  counters.forEach(c => counterIO.observe(c));
+
+  // FAQ dropdown (nav button)
+  const faqDropdown = document.getElementById('faqDropdown');
+  const faqTrigger = document.getElementById('faqTrigger');
+  function toggleFaqDropdown(e, forceOpen) {
+    if (e) e.stopPropagation();
+    if (forceOpen) { faqDropdown.classList.add('open'); return; }
+    faqDropdown.classList.toggle('open');
+  }
+  document.addEventListener('click', (e) => {
+    if (faqDropdown.classList.contains('open') && !faqDropdown.contains(e.target) && e.target !== faqTrigger) {
+      faqDropdown.classList.remove('open');
+    }
+  });
+
+  // FAQ accordion
+  function toggleFaq(qEl) {
+    const item = qEl.parentElement;
+    const answer = item.querySelector('.faq-a');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-a').style.maxHeight = null;
+    });
+    if (!wasOpen) {
+      item.classList.add('open');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+  }
+
+  // Testimonials slider
+  const track = document.getElementById('testiTrack');
+  const dotsWrap = document.getElementById('testiDots');
+  const cards = track.children.length;
+  function perView() { return window.innerWidth <= 900 ? 1 : 3; }
+  let pages = Math.max(1, cards - perView() + 1);
+  let idx = 0;
+  function buildDots() {
+    dotsWrap.innerHTML = '';
+    pages = Math.max(1, cards - perView() + 1);
+    for (let i = 0; i < pages; i++) {
+      const b = document.createElement('button');
+      if (i === 0) b.classList.add('active');
+      b.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(b);
+    }
+  }
+  function goTo(i) {
+    idx = i;
+    const cardWidth = track.children[0].getBoundingClientRect().width + 24;
+    track.style.transform = `translateX(-${cardWidth * i}px)`;
+    [...dotsWrap.children].forEach((d, n) => d.classList.toggle('active', n === i));
+  }
+  buildDots();
+  let autoSlide = setInterval(() => { goTo((idx + 1) % pages); }, 4500);
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      buildDots();
+      goTo(0);
+    }, 120);
+  });
+
+  // Booking modal
+  function openBooking(){ document.getElementById('bookModal').classList.add('open'); }
+  function closeBooking(){ document.getElementById('bookModal').classList.remove('open'); }
+  function handleBookingSubmit(e){
+    e.preventDefault();
+    alert("Thanks! Your consultation request has been noted. Sahil's team will follow up shortly.");
+    closeBooking();
+    return false;
+  }
+
+  // Hero chip — Exercise / Diet Chart / Motivation, auto-rotating
+  (function heroChip(){
+    const chip = document.getElementById('heroChip');
+    if (!chip) return;
+    const slides = [...chip.querySelectorAll('.hero-chip-slide')];
+    let current = 0, timer;
+
+    function goToSlide(i){
+      slides[current].classList.remove('active');
+      current = i;
+      slides[current].classList.add('active');
+    }
+    function next(){ goToSlide((current + 1) % slides.length); }
+    function restart(){ clearInterval(timer); timer = setInterval(next, 3500); }
+
+    restart();
+    chip.addEventListener('mouseenter', () => clearInterval(timer));
+    chip.addEventListener('mouseleave', restart);
+  })();
+
+  // Smooth-scroll for internal nav links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e){
+      const id = this.getAttribute('href');
+      if (id.length > 1) {
+        const target = document.querySelector(id);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+      document.querySelectorAll(".course-card").forEach(card => {
+    card.addEventListener("click", function(e){
+
+        // Close other cards
+        document.querySelectorAll(".course-card").forEach(c=>{
+            if(c!==this){
+                c.classList.remove("active");
+            }
+        });
+
+        // Toggle current card
+        this.classList.toggle("active");
+    });
+});
+    });
+  });
+</script>
+</body>
+</html>
